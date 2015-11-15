@@ -1,0 +1,22 @@
+#!/usr/bin/expect --
+
+# Version 12/20/12
+#
+# Author: Justin Ryburn (justin@ryburn.org)
+# This script performs a remote login to pe1 in the VMM lab.
+# NOTE: This script relies on an entry in /etc/hosts file.
+#
+# Usage: pe1
+#
+
+set user lab
+set pass lab123
+set host pe1
+set timeout 30
+
+spawn -noecho telnet $host
+   expect -re "login*"
+   send "$user\r"
+   expect -re "Password:*"
+   send "$pass\r"
+interact

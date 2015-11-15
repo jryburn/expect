@@ -1,0 +1,21 @@
+#!/usr/bin/expect --
+
+# Version 08/14/12
+#
+# Author: Justin Ryburn (justin@ryburn.org)
+# This script performs a remote login to MX1-Qfabric-R180 in the Juniper Herndon POC lab.
+#
+# Usage: MX1-QFabric -R180
+#
+
+set user jryburn
+set pass "3EwaL6;u"
+set host 172.25.52.180
+set timeout 30
+
+spawn -noecho telnet $host
+   expect -re "login*"
+   send "$user\r"
+   expect -re "Password:*"
+   send "$pass\r"
+interact

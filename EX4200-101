@@ -1,0 +1,21 @@
+#!/usr/bin/expect --
+
+# Version 08/14/12
+#
+# Author: Justin Ryburn (justin@ryburn.org)
+# This script performs a remote login to EX4200-101 in the Juniper Herndon POC lab.
+#
+# Usage: EX4200-101
+#
+
+set user jryburn
+set pass KyD8FN7W
+set host 172.25.45.101
+set timeout 30
+
+spawn -noecho telnet $host
+   expect -re "login*"
+   send "$user\r"
+   expect -re "Password:*"
+   send "$pass\r"
+interact

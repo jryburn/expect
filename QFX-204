@@ -1,0 +1,21 @@
+#!/usr/bin/expect --
+
+# Version 08/14/12
+#
+# Author: Justin Ryburn (justin@ryburn.org)
+# This script performs a remote login to QFX-204 in the Juniper Herndon POC lab.
+#
+# Usage: QFX-204
+#
+
+set user jryburn
+set pass pL9kJx2w
+set host 172.25.45.204
+set timeout 30
+
+spawn -noecho telnet $host
+   expect -re "login*"
+   send "$user\r"
+   expect -re "Password:*"
+   send "$pass\r"
+interact
