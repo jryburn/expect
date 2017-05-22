@@ -3,14 +3,14 @@
 # Version 08/14/12
 #
 # Author: Justin Ryburn (justin@ryburn.org)
-# This script performs a remote login to MX1-Qfabric-R180 in the Juniper Herndon POC lab.
+# This script performs a remote login to EX4200-100 in the Juniper Herndon POC lab.
 #
-# Usage: MX1-QFabric -R180
+# Usage: EX4200-100
 #
 
-set user jryburn
-set pass "3EwaL6;u"
-set host 172.25.52.180
+set user #username
+set pass #password
+set host #hostname
 set timeout 30
 
 spawn -noecho telnet $host

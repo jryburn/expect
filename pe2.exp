@@ -1,16 +1,17 @@
 #!/usr/bin/expect --
 
-# Version 08/14/12
+# Version 12/20/12
 #
 # Author: Justin Ryburn (justin@ryburn.org)
-# This script performs a remote login to SRX2 in the Juniper Herndon POC lab.
+# This script performs a remote login to pe2 in the VMM lab.
+# NOTE: This script relies on an entry in /etc/hosts file.
 #
-# Usage: SRX2
+# Usage: pe2
 #
 
-set user jryburn
-set pass pL9kJx2w
-set host 172.25.52.185
+set user #username
+set pass #password
+set host #hostname
 set timeout 30
 
 spawn -noecho telnet $host

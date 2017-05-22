@@ -3,14 +3,14 @@
 # Version 08/14/12
 #
 # Author: Justin Ryburn (justin@ryburn.org)
-# This script performs a remote login to QFX-205 in the Juniper Herndon POC lab.
+# This script performs a remote login to EX4200-101 in the Juniper Herndon POC lab.
 #
-# Usage: QFX-205
+# Usage: EX4200-101
 #
 
-set user jryburn
-set pass pL9kJx2w
-set host 172.25.45.205
+set user #username
+set pass #password
+set host #hostname
 set timeout 30
 
 spawn -noecho telnet $host

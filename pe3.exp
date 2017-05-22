@@ -3,15 +3,15 @@
 # Version 12/20/12
 #
 # Author: Justin Ryburn (justin@ryburn.org)
-# This script performs a remote login to pe2 in the VMM lab.
+# This script performs a remote login to pe3 in the VMM lab.
 # NOTE: This script relies on an entry in /etc/hosts file.
 #
-# Usage: pe2
+# Usage: pe3
 #
 
-set user lab
-set pass lab123
-set host pe2
+set user #username
+set pass #password
+set host #hostname
 set timeout 30
 
 spawn -noecho telnet $host

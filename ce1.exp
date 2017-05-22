@@ -1,16 +1,17 @@
 #!/usr/bin/expect --
 
-# Version 08/14/12
+# Version 12/20/12
 #
 # Author: Justin Ryburn (justin@ryburn.org)
-# This script performs a remote login to MX80-87 in the Juniper Herndon POC lab.
+# This script performs a remote login to ce1 in the VMM lab.
+# NOTE: This script relies on an entry in /etc/hosts file.
 #
-# Usage: MX80-87
+# Usage: ce1
 #
 
-set user jryburn
-set pass pL9kJx2w
-set host 172.25.46.87
+set user #username
+set pass #password
+set host #hostname
 set timeout 30
 
 spawn -noecho telnet $host

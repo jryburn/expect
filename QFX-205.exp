@@ -3,14 +3,14 @@
 # Version 08/14/12
 #
 # Author: Justin Ryburn (justin@ryburn.org)
-# This script performs a remote login to SRX1 in the Juniper Herndon POC lab.
+# This script performs a remote login to QFX-205 in the Juniper Herndon POC lab.
 #
-# Usage: SRX1
+# Usage: QFX-205
 #
 
-set user jryburn
-set pass pL9kJx2w
-set host 172.25.52.184
+set user #username
+set pass #password
+set host #hostname
 set timeout 30
 
 spawn -noecho telnet $host

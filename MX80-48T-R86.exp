@@ -3,14 +3,14 @@
 # Version 08/14/12
 #
 # Author: Justin Ryburn (justin@ryburn.org)
-# This script performs a remote login to EX4200-100 in the Juniper Herndon POC lab.
+# This script performs a remote login to MX80-86 in the Juniper Herndon POC lab.
 #
-# Usage: EX4200-100
+# Usage: MX80-86
 #
 
-set user jryburn
-set pass KyD8FN7W
-set host 172.25.45.100
+set user #username
+set pass #password
+set host #hostname
 set timeout 30
 
 spawn -noecho telnet $host
